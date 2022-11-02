@@ -1,10 +1,13 @@
-import Test from '@components/test';
+//import Test from '@components/test';
 import Resources from '@components/resources';
 import References from '@components/references';
 import { Box, Container, Tab, Tabs, Typography } from '@mui/material'
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import { useState } from 'react';
+
+import dynamic from 'next/dynamic'
+const Test = dynamic(() => import('@components/test'), { ssr: false })
 
 function TabPanel(props: any) {
   const { children, value, index, ...other } = props;
@@ -64,7 +67,7 @@ const Home: NextPage = () => {
             </Tabs>
           </Box>
           <TabPanel value={value} index={0}>
-            {/* <Test/> */} Test
+            <Test/>
           </TabPanel>
           <TabPanel value={value} index={1}>
             {/* <Resources /> */} Resources
