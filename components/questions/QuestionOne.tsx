@@ -2,7 +2,6 @@ import React from 'react'
 import styles from '@styles/content.module.css'
 import QuestionInput from '../questionInput';
 import Button from '@mui/material/Button';
-import { callbackify } from 'util';
 
 type Props = {
     callBack: Function,
@@ -21,8 +20,8 @@ function QuestionOne ({callBack, handleBackBtn, handleNextBtn}: Props) {
           <div>question content</div>
           <QuestionInput callBack={handleCallBack}/>
           <div className={styles.btnRow}>
-            <Button variant="contained" onClick={handleBackBtn()}>Back</Button>
-            <Button variant="contained" onClick={handleNextBtn()}>Next</Button>
+            <Button variant="contained" onClick={event => handleBackBtn()}>Back</Button>
+            <Button variant="contained" onClick={event => handleNextBtn()}>Next</Button>
           </div>
         </>
     )

@@ -3,10 +3,9 @@ import styles from '@styles/content.module.css'
 import QuestionOne from './questions/QuestionOne'
 import QuestionTwo from './questions/QuestionTwo'
 import QuestionThree from './questions/QuestionThree'
-
+const NUM_QUESTIONS = 3; 
 
 function Test(): JSX.Element {
-  const NUM_QUESTIONS = 3; 
   const [questionRender, setQuestionRender] = useState(1);
   const [score, setScores] = useState([0,0,0])
 
