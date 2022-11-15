@@ -1,4 +1,3 @@
-import TestPage from '@components/TestPage';
 import Resources from '@components/resources';
 import References from '@components/references';
 import { Box, Container, Tab, Tabs, Typography } from '@mui/material'
@@ -7,7 +6,7 @@ import Head from 'next/head'
 import { useState } from 'react';
 
 import dynamic from 'next/dynamic'
-const Test = dynamic(() => import('@components/test'), { ssr: false })
+const TestPage = dynamic(() => import('@components/TestPage'), { ssr: false })
 
 function TabPanel(props: any) {
   const { children, value, index, ...other } = props;
