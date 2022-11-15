@@ -1,4 +1,4 @@
-//import Test from '@components/test';
+import TestPage from '@components/TestPage';
 import Resources from '@components/resources';
 import References from '@components/references';
 import { Box, Container, Tab, Tabs, Typography } from '@mui/material'
@@ -61,13 +61,13 @@ const Home: NextPage = () => {
               scrollButtons
               allowScrollButtonsMobile
             >
-              <Tab label="Test" {...a11yProps(0)} />
+              <Tab label="Tests" {...a11yProps(0)} />
               <Tab label="Resources" {...a11yProps(1)} />
               <Tab label="References" {...a11yProps(2)} />
             </Tabs>
           </Box>
           <TabPanel value={value} index={0}>
-            <Test/>
+            <TestPage/>
           </TabPanel>
           <TabPanel value={value} index={1}>
             {/* <Resources /> */} Resources

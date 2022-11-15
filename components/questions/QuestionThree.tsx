@@ -8,7 +8,6 @@ type Props = {
     handleBackBtn: Function,
     handleNextBtn: Function
 };
-
 function QuestionThree ({callBack, handleBackBtn, handleNextBtn}: Props) {
 
   function handleCallBack (newValue: number) {

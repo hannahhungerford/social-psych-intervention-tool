@@ -3,9 +3,18 @@ import styles from '@styles/content.module.css'
 import QuestionOne from './questions/QuestionOne'
 import QuestionTwo from './questions/QuestionTwo'
 import QuestionThree from './questions/QuestionThree'
+import {TestOneData, TestTwoData, TestThreeData} from './testData'
 const NUM_QUESTIONS = 3; 
 
-function Test(): JSX.Element {
+type Props = {
+  testNum: number,
+};
+
+function Test({testNum} : Props): JSX.Element {
+  const [testData, setTestData] = useState({
+    questions: {},
+    numQuestions: 0
+  });
   const [questionRender, setQuestionRender] = useState(1);
   const [score, setScores] = useState([0,0,0])
 
@@ -22,9 +31,18 @@ function Test(): JSX.Element {
   }
   
   function handleNextBtn () {
-    if (questionRender < NUM_QUESTIONS){
+    if (questionRender < testData.numQuestions){
       setQuestionRender(questionRender+1);
     }
+  }
+
+  switch(testNum) {
+    case 1:
+      setTestData(TestOneData); 
+    case 2:
+      setTestData(TestTwoData); 
+    case 3:
+      setTestData(TestThreeData); 
   }
 
   switch (questionRender) {
