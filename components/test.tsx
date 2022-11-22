@@ -1,4 +1,4 @@
-import React, { useState, Component, JSXElementConstructor} from 'react'
+import React, { useState, Component, JSXElementConstructor, useEffect} from 'react'
 import styles from '@styles/content.module.css'
 import QuestionOne from './questions/QuestionOne'
 import QuestionTwo from './questions/QuestionTwo'
@@ -36,14 +36,17 @@ function Test({testNum} : Props): JSX.Element {
     }
   }
 
-  switch(testNum) {
-    case 1:
-      setTestData(TestOneData); 
-    case 2:
-      setTestData(TestTwoData); 
-    case 3:
-      setTestData(TestThreeData); 
-  }
+  useEffect(() => {
+    switch(testNum) {
+      case 1:
+        setTestData(TestOneData); 
+      case 2:
+        setTestData(TestTwoData); 
+      case 3:
+        setTestData(TestThreeData); 
+    }
+
+  }, [testNum])
 
   switch (questionRender) {
     case 1:
