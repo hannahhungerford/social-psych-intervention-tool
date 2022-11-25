@@ -1,4 +1,4 @@
-import React, { useState, Component, JSXElementConstructor} from 'react'
+import React, { useState, Component, JSXElementConstructor, useEffect} from 'react'
 import styles from '@styles/content.module.css'
 import Question from './questions/Question'
 import {TestData} from './testData'
@@ -79,6 +79,7 @@ function Test(): JSX.Element {
     }
   }
 
+<<<<<<< HEAD
   return (
     <>
       <header>
@@ -94,6 +95,48 @@ function Test(): JSX.Element {
     />
     </>
   )
+=======
+  useEffect(() => {
+    switch(testNum) {
+      case 1:
+        setTestData(TestOneData); 
+      case 2:
+        setTestData(TestTwoData); 
+      case 3:
+        setTestData(TestThreeData); 
+    }
+
+  }, [testNum])
+
+  switch (questionRender) {
+    case 1:
+      return (
+        <QuestionOne
+          handleBackBtn={handleBackBtn}
+          handleNextBtn={handleNextBtn}
+          callBack={questionAnswer}
+        />
+      );
+    case 2:
+      return (
+        <QuestionTwo
+          handleBackBtn={handleBackBtn}
+          handleNextBtn={handleNextBtn}
+          callBack={questionAnswer}
+        />
+      );
+    case 3:
+      return (
+        <QuestionThree
+          handleBackBtn={handleBackBtn}
+          handleNextBtn={handleNextBtn}
+          callBack={questionAnswer}
+        />
+      );
+    default:
+      return(<></>); 
+  }
+>>>>>>> 040140d5511e5d7820403e90cd3d8505a2357bee
 }
 
 export default Test; 
