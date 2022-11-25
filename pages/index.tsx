@@ -6,7 +6,7 @@ import Head from 'next/head'
 import { useState } from 'react';
 
 import dynamic from 'next/dynamic'
-const TestPage = dynamic(() => import('@components/TestPage'), { ssr: false })
+const Test = dynamic(() => import('@components/test'), { ssr: false })
 
 function TabPanel(props: any) {
   const { children, value, index, ...other } = props;
@@ -49,7 +49,7 @@ const Home: NextPage = () => {
       <Container>
         <main>
           <Typography variant='h1' style={{ marginBottom: 8 }}>
-            Social Media Intervention Test
+            Social Media Intervention
           </Typography>
           <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <Tabs
@@ -60,19 +60,19 @@ const Home: NextPage = () => {
               scrollButtons
               allowScrollButtonsMobile
             >
-              <Tab label="Tests" {...a11yProps(0)} />
+              <Tab label="Test" {...a11yProps(0)} />
               <Tab label="Resources" {...a11yProps(1)} />
               <Tab label="References" {...a11yProps(2)} />
             </Tabs>
           </Box>
           <TabPanel value={value} index={0}>
-            <TestPage/>
+            <Test/>
           </TabPanel>
           <TabPanel value={value} index={1}>
-            {/* <Resources /> */} Resources
+             <Resources />
           </TabPanel>
           <TabPanel value={value} index={2}>
-            {/* <References /> */} References
+            <References />
           </TabPanel>
         </main>
       </Container>

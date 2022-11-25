@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import styles from '@styles/content.module.css'
 
 import FormControl from '@mui/material/FormControl';
@@ -9,10 +9,16 @@ import RadioGroup from '@mui/material/RadioGroup';
 
 type Props = {
     callBack: Function,
+    number: number
 };
 
-const QuestionInput = ({callBack}: Props) => {
+const QuestionInput = ({callBack, number}: Props) => {
+    console.log("here"); 
     const [value, setValue] = useState(0);
+
+    useEffect(() => {
+        setValue(0); 
+    }, [number])
 
     const handleChange = (event: any, newValue: any) => {
         setValue(newValue);

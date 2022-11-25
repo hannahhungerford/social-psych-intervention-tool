@@ -31,3 +31,12 @@ header {
   font-weight: bold;
   font-size: xx-large;
 }
+
+
+li{
+  margin: 10px 0;
+}
+
+br {
+  display: block;
+}
