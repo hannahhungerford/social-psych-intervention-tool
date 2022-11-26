@@ -20,7 +20,7 @@ const TestPage: NextPage = () => {
               Social Media Intervention Test
             </Typography>
 
-            <Test testNum={testNum}></Test>
+            <Test></Test>
           </main>
         </Container>
       </>

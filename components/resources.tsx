@@ -162,10 +162,10 @@ function Resources() {
           <Image alt="bell lets talk" src="/bell-lets-talk.jpeg" width={350} height={300} />
           <CardContent>
           <p>
-          Building on ten years of increased awareness and acceptance around mental health, Bell Let’s Talk is focused on engaging Canadians to take action to create positive change in mental health.
+          Building on ten years of increased awareness and acceptance around mental health, Bell Let&apos;s Talk is focused on engaging Canadians to take action to create positive change in mental health.
           </p>
           <p>
-            Dedicated to moving mental health forward in Canada, Bell Let’s Talk promotes awareness and action with a strategy built on 4 key pillars: Fighting the stigma, improving access to care, supporting world-class research and leading by example in workplace mental health.
+            Dedicated to moving mental health forward in Canada, Bell Let&apos;s Talk promotes awareness and action with a strategy built on 4 key pillars: Fighting the stigma, improving access to care, supporting world-class research and leading by example in workplace mental health.
           </p>
           <p>
             Website has ways to help (recognizing signs of stress, taking care of yourself, taking care of others, and connect to help). 
@@ -182,7 +182,7 @@ function Resources() {
           <Image alt="wellness together canada" src="/wellnes-together-canada.png" width={350} height={300} />
           <CardContent>
             <p>
-            Wellness Together Canada provides free resources for mental health and substance use support. Tell us a little bit about yourself and we’ll find the ones best suited to you. Your answers will remain private and confidential. 
+            Wellness Together Canada provides free resources for mental health and substance use support. Tell us a little bit about yourself and we&apos;ll find the ones best suited to you. Your answers will remain private and confidential. 
             </p>
             <p>
               Webiste also offers:
@@ -221,19 +221,19 @@ function Resources() {
         </p>
         <ul>
           <li>
-          <b>Use your screen time wisely:</b> Keep track of how much time you’ve spent on social media by using it more productively. Set limits on how much you time you spend on your devices as apps should not be a roadblock to completing your daily tasks. This is to stop mindless scrolling by utilizing your time more beneficial.
+          <b>Use your screen time wisely:</b> Keep track of how much time you&apos;ve spent on social media by using it more productively. Set limits on how much you time you spend on your devices as apps should not be a roadblock to completing your daily tasks. This is to stop mindless scrolling by utilizing your time more beneficial.
           </li>
           <li>
           <b>Control the content you see:</b> Avoid following accounts that are negative (i.e. bullying, aggressive, and/or insulting) or reading misinformation that spreads false news online. Some sources are unreliable and harmful to our mental health.
           </li>
           <li>
-          <b>Be cautious of Clickbaits:</b> Clickbaits are links that use tactics to urge us to click them. DON’T. They are usually unsatisfactory, scripted, monetizing schemes that waste time. They are also associated with viruses so if something looks too good to be true, it is.
+          <b>Be cautious of Clickbaits:</b> Clickbaits are links that use tactics to urge us to click them. DON&apos;T. They are usually unsatisfactory, scripted, monetizing schemes that waste time. They are also associated with viruses so if something looks too good to be true, it is.
           </li>
           <li>
           <b>Don’t post everything online:</b> It may seem like this is the point of social media, but in reality it is not wise to make everything public. Strangers will exploit this information to take advantage od you. Keep your identity and address hidden and be mindful of what you post and who you speak to online.
           </li>
           <li>
-          <b>Disable the like-counter:</b> This allows you to post without worrying over numbers. Sometimes we forget that numbers don’t actually represent who we are. We have a tendency to post things we think others would like rather than what we actually want to post and due to worry others will judge us for it. So go ahead, post an album from your favorite musician and don't worry about who else likes them!
+          <b>Disable the like-counter:</b> This allows you to post without worrying over numbers. Sometimes we forget that numbers don&apos;t actually represent who we are. We have a tendency to post things we think others would like rather than what we actually want to post and due to worry others will judge us for it. So go ahead, post an album from your favorite musician and don&apos;t worry about who else likes them!
           </li>
         </ul>
 
@@ -247,13 +247,13 @@ function Resources() {
           <b>Be nice.</b> Mean behavior is not OK. Make it clear that you expect your kids to treat others with respect, and to never post hurtful or embarrassing messages. And ask them to always tell you about any harassing or bullying messages that others post.
           </li>
           <li>
-          <b>Think twice before hitting send.</b> Remind kids that what they post can be used against them. For example, letting the world know that you're off on vacation or posting your home address gives would-be robbers a chance to strike. Kids also should avoid posting specific locations of parties or events, as well as phone numbers.
+          <b>Think twice before hitting send.</b> Remind kids that what they post can be used against them. For example, letting the world know that you&apos;re off on vacation or posting your home address gives would-be robbers a chance to strike. Kids also should avoid posting specific locations of parties or events, as well as phone numbers.
           </li>
           <li>
-          <b>Follow the WWGS? (What Would Grandma Say?) rule.</b> Teach kids not to share anything on social media that they wouldn't want their teachers, college admissions officers, future bosses — and yes, grandma — to see.
+          <b>Follow the WWGS? (What Would Grandma Say?) rule.</b> Teach kids not to share anything on social media that they wouldn&apos;t want their teachers, college admissions officers, future bosses — and yes, grandma — to see.
           </li>
           <li>
-          <b>Use privacy settings.</b> If you don't know them, don't friend them. This is a plain, simple — and safe — rule of thumb. Let them know that kids who follow friends are generally happier than those who follow strangers
+          <b>Use privacy settings.</b> If you don&apos;t know them, don&apos;t friend them. This is a plain, simple — and safe — rule of thumb. Let them know that kids who follow friends are generally happier than those who follow strangers
           </li>
           <li>
           <b>Make a social media contract.</b> they agree to protect their own privacy, consider their reputation, and not give out personal information. They also promise not to use technology to hurt anyone else through bullying or gossip
@@ -272,7 +272,7 @@ function Resources() {
             Know when to say <b>no</b>
           </li>
           <li>
-          Develop hobbies and interests you genuinely like, even if your friends aren’t into the same things
+          Develop hobbies and interests you genuinely like, even if your friends aren&apos;t into the same things
           </li>
           <li>
           Taking time for yourself
