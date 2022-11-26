@@ -36,7 +36,7 @@ const QuestionInput = ({callBack, number}: Props) => {
             >
                 <FormControlLabel className={styles.radioBtn} value={0} labelPlacement={"bottom"} control={<Radio />} label="Strongly Disagree" />
                 <FormControlLabel className={styles.radioBtn} value={1} labelPlacement={"bottom"} control={<Radio />} label="Disagree" />
-                <FormControlLabel className={styles.radioBtn} value={2} labelPlacement={"bottom"} control={<Radio />} label="Nuetral" />
+                <FormControlLabel className={styles.radioBtn} value={2} labelPlacement={"bottom"} control={<Radio />} label="Neutral" />
                 <FormControlLabel className={styles.radioBtn} value={3} labelPlacement={"bottom"} control={<Radio />} label="Agree" />
                 <FormControlLabel className={styles.radioBtn} value={4} labelPlacement={"bottom"} control={<Radio />} label="Strongly Agree" />
             </RadioGroup>

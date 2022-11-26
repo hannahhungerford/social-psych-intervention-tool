@@ -10,6 +10,7 @@ import Link from "next/link";
 import { Box, Button } from "@mui/material";
 import { useRouter } from 'next/router'
 import SearchIcon from '@mui/icons-material/Search';
+import logo from '../public/logo.png'
 
 export const navLinks = [
   { title: 'home', path: '/' },
@@ -32,8 +33,8 @@ const Header = () => {
               sx={{ display: `flex`, justifyContent: `space-between`, alignItems: 'center' }}
             >
               <Link passHref href="/">
-                <Button onClick={clearAuth}>
-                  logo
+                <Button onClick={clearAuth} className={styles.logoContainer}>
+                  <Image className={styles.logo} src={logo} width={50} height={50} objectFit="cover" />
                 </Button>
               </Link>
               {/* for desktop view */}

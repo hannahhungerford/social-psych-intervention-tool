@@ -91,3 +91,19 @@
   flex-direction: row;
   justify-content: flex-end;
 }
+
+.logoContainer {
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  margin: 1em;
+  padding: 0;
+}
+
+.logo {
+  height: 30px;
+  width: 30px;
+  border-radius: 4px;
+}
