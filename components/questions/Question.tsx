@@ -25,7 +25,7 @@ function Question ({callBack, handleBackBtn, handleNextBtn, questionNum, questio
     if (questionNum < 13){
       return(
           <>
-            <header>Question {questionNum}</header>
+            <h2>Question {questionNum}</h2>
             <div>{questionContent}</div>
             <QuestionInput callBack={handleCallBack} number={questionNum}/>
             <div className={styles.btnRow}>
@@ -38,7 +38,7 @@ function Question ({callBack, handleBackBtn, handleNextBtn, questionNum, questio
     else {
       return (
         <>
-          <header>Results</header>
+          <h2>Results</h2>
           <div>{resultsMessage.conceptScores}</div>
           <br/>
           <div>{resultsMessage.resultMessage}</div>

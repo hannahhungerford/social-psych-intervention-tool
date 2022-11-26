@@ -13,7 +13,6 @@ type Props = {
 };
 
 const QuestionInput = ({callBack, number}: Props) => {
-    console.log("here"); 
     const [value, setValue] = useState(0);
 
     useEffect(() => {
@@ -22,7 +21,6 @@ const QuestionInput = ({callBack, number}: Props) => {
 
     const handleChange = (event: any, newValue: any) => {
         setValue(newValue);
-        console.log(newValue); 
         callBack(newValue);
     };
 

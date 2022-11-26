@@ -12,13 +12,13 @@ function Test(): JSX.Element {
   function questionAnswer (value : number, question : number) {
     var newScore = [...scores];
     if(question >= 1 && question <= 4){
-      newScore[0] = newScore[0] + value;
+      newScore[0] = Number(newScore[0]) + Number(value);
     } 
     else if (question >= 5 && question <= 8){
-      newScore[1] = newScore[1] + value;
+      newScore[1] = Number(newScore[1]) + Number(value);
     }
     else {
-      newScore[2] = newScore[2] + value;
+      newScore[2] = Number(newScore[2]) + Number(value);
     }
     setScores(newScore);
   }
@@ -30,7 +30,6 @@ function Test(): JSX.Element {
   }
 
   function renderResult() {
-    console.log("here"); 
     let resultMessage; 
     let totalScore = 0;
     let conceptScores = "This test analyzes your social media across three social psychological key concepts. ";
@@ -51,15 +50,16 @@ function Test(): JSX.Element {
     }
     
     //compute message
-    if (totalScore >= 20 && totalScore <= 39){
-      resultMessage = TestData.resultMessags.lowRange;
-    }
-    else if (totalScore >= 40){
+    if (totalScore >= 21 && totalScore <= 33){
       resultMessage = TestData.resultMessags.midRange;
     }
-    else {
+    else if (totalScore > 34){
       resultMessage = TestData.resultMessags.highRange;
     }
+    else {
+      resultMessage = TestData.resultMessags.lowRange;
+    }
+
 
     let results = {
       conceptScores: conceptScores, 
@@ -79,11 +79,10 @@ function Test(): JSX.Element {
     }
   }
 
-<<<<<<< HEAD
   return (
     <>
       <header>
-        {"Social Media Intervention Test"}
+        {"Healthy Social Media Use Test"}
       </header>
       <Question
       handleBackBtn={handleBackBtn}
@@ -95,48 +94,6 @@ function Test(): JSX.Element {
     />
     </>
   )
-=======
-  useEffect(() => {
-    switch(testNum) {
-      case 1:
-        setTestData(TestOneData); 
-      case 2:
-        setTestData(TestTwoData); 
-      case 3:
-        setTestData(TestThreeData); 
-    }
-
-  }, [testNum])
-
-  switch (questionRender) {
-    case 1:
-      return (
-        <QuestionOne
-          handleBackBtn={handleBackBtn}
-          handleNextBtn={handleNextBtn}
-          callBack={questionAnswer}
-        />
-      );
-    case 2:
-      return (
-        <QuestionTwo
-          handleBackBtn={handleBackBtn}
-          handleNextBtn={handleNextBtn}
-          callBack={questionAnswer}
-        />
-      );
-    case 3:
-      return (
-        <QuestionThree
-          handleBackBtn={handleBackBtn}
-          handleNextBtn={handleNextBtn}
-          callBack={questionAnswer}
-        />
-      );
-    default:
-      return(<></>); 
-  }
->>>>>>> 040140d5511e5d7820403e90cd3d8505a2357bee
 }
 
 export default Test; 

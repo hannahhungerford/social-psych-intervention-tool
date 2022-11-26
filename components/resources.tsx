@@ -259,6 +259,8 @@ function Resources() {
           <b>Make a social media contract.</b> they agree to protect their own privacy, consider their reputation, and not give out personal information. They also promise not to use technology to hurt anyone else through bullying or gossip
           </li>
         </ul>
+        <br/>
+        <br />
         <header>
           <Link target="_blank" href="https://www.betterhelp.com/advice/general/the-importance-of-a-strong-sense-of-self-and-how-to-gain-it/">The Importance Of A Strong Sense Of Self And How To Gain It </Link>
         </header>
